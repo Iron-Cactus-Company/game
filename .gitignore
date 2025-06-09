@@ -1,0 +1,89 @@
+# =================== #
+# Unity - Main Ignore #
+# =================== #
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+UserSettings/
+
+# ===================== #
+# OS / Editor Metadata  #
+# ===================== #
+
+.DS_Store
+Thumbs.db
+
+# ===================== #
+# IDE / Editor Settings #
+# ===================== #
+
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.pidb
+*.user
+*.userprefs
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# ===================== #
+# Unity Cache & Reports #
+# ===================== #
+
+sysinfo.txt
+*.stackdump
+*.log
+
+# ===================== #
+# Build Artifacts       #
+# ===================== #
+
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.ipa
+
+# ===================== #
+# Addressables Cache    #
+# ===================== #
+
+/Assets/AddressableAssetsData/*/AssetGroups/*
+/Assets/AddressableAssetsData/*/*.bin
+/Assets/AddressableAssetsData/*/*.link
+/Assets/AddressableAssetsData/*/*.sb
+
+# ===================== #
+# Unity Collaborate     #
+# ===================== #
+
+.collabignore
+.collab/
+
+# ===================== #
+# Unity Cloud Build     #
+# ===================== #
+
+UnityCloudBuild/
+
+# ===================== #
+# Rider Specific        #
+# ===================== #
+
+.idea/
+*.sln.iml
+
+# ===================== #
+# VS Code Tasks         #
+# ===================== #
+
+.vscode/tasks.json
