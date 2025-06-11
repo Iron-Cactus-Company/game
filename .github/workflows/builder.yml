@@ -10,7 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         targetPlatform:
-          #- WebGL
+          - WebGL
           - Android
 
     steps:
@@ -26,7 +26,7 @@ jobs:
           restore-keys: Library-
 
       - if: matrix.targetPlatform == 'Android'
-        name: Clean up workspace to free disk space
+        name: Clean up workspace
         run: |
           echo "Cleaning up build and temp folders..."
           rm -rf build/*
