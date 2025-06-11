@@ -26,15 +26,12 @@ jobs:
           restore-keys: Library-
 
       - if: matrix.targetPlatform == 'Android'
-        uses: jlumbroso/free-disk-space@v1.3.1
-        with:
-          tool-cache: false
-          android: false
-          dotnet: false
-          haskell: false
-          large-packages: true
-          docker-images: true
-          swap-storage: true
+        name: Clean up workspace to free disk space
+        run: |
+          echo "Cleaning up build and temp folders..."
+          rm -rf build/*
+          rm -rf Temp obj
+          echo "Cleanup complete."
 
       - uses: game-ci/unity-builder@v4
         env:
