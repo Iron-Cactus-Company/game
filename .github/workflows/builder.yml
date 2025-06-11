@@ -5,7 +5,8 @@ on: [push, pull_request]
 jobs:
   buildForAllSupportedPlatforms:
     name: Build for ${{ matrix.targetPlatform }}
-    runs-on: [self-hosted, unity]
+    runs-on: ubuntu-latest
+    #runs-on: [self-hosted, unity]
     strategy:
       fail-fast: false
       matrix:
