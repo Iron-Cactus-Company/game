@@ -11,7 +11,7 @@ jobs:
       matrix:
         targetPlatform:
           - WebGL
-#          - Android
+          - Android
 
     steps:
       - uses: actions/checkout@v4
