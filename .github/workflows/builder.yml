@@ -48,3 +48,8 @@ jobs:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
           retention-days: 1
+          
+      - name: Mark build complete
+        if: matrix.targetPlatform == 'WebGL'
+        run: |
+          touch "/tmp/runner/github/${GITHUB_REF_NAME}-${GITHUB_RUN_ID}"
